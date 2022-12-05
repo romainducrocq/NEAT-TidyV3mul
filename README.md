@@ -138,7 +138,7 @@ $ ./run.sh -m eval -k n -l 1_1 -e 10 -t 0 -n 0 -s sav1_1
 ```
 usage: apps/exec [-h] [-m MOD] [-k KEY] [-l LVL] [-g GEN] [-e EPO] [-t STP] [-n NOP] [-p PLT] [-s SAV]
 
-NEAT SuperMorIA
+TidyV3mul
 
 optional args:
   -h      Print help and exit
@@ -180,8 +180,8 @@ optional args:
 ```
 * HYPERPARAMETER VALUES :
 
-INPUTS               = 100
-OUTPUTS              = 4
+INPUTS               = 8
+OUTPUTS              = 6
 
 LIM_HIDDEN           = 1000000
 

@@ -98,7 +98,7 @@ struct DefaultConf{
     const static std::vector<typename DefaultConf<T>::Action> ACTIONS;
 
     /*** DEC OPT PARAMS HERE */
-    const static std::string KEY_DEBUG;
+
 
     static inline bool argParse(int argc, char** argv)
     {
@@ -116,7 +116,7 @@ struct DefaultConf{
                 default :
                     std::cerr << "usage: apps/exec [-h] [-m MOD] [-k KEY] [-l LVL] [-g GEN] [-e EPO] [-t STP] [-n NOP] [-p PLT] [-s SAV] \n";
                     std::cerr << "\n";
-                    std::cerr << "NEAT SuperMorIA                                                                                        \n";
+                    std::cerr << "TidyV3mul                                                                                              \n";
                     std::cerr << "\n";
                     std::cerr << "optional args:                                                                                         \n";
                     std::cerr << "  -h      Print help and exit                                                                          \n";
@@ -215,9 +215,9 @@ std::string DefaultConf<T>::LOG_SAV = "";
 
 /*** DEF PARAMS HERE */
 template<typename T>
-const size_t DefaultConf<T>::INPUTS = 100;
+const size_t DefaultConf<T>::INPUTS = 8;
 template<typename T>
-const size_t DefaultConf<T>::OUTPUTS = 4;
+const size_t DefaultConf<T>::OUTPUTS = 6;
 template<typename T>
 const size_t DefaultConf<T>::LIM_HIDDEN = 1000000;
 template<typename T>
@@ -310,10 +310,12 @@ template<typename T>
 const std::array<typename DefaultConf<T>::Action, DefaultConf<T>::OUTPUTS> ACTIONS_ = {
         DefaultConf<T>::Action::A,
         DefaultConf<T>::Action::B,
-        // DefaultConf<T>::Action::UP,
-        // DefaultConf<T>::Action::DOWN,
+        DefaultConf<T>::Action::UP,
+        DefaultConf<T>::Action::DOWN,
         DefaultConf<T>::Action::LEFT,
         DefaultConf<T>::Action::RIGHT,
+        // DefaultConf<T>::Action::START,
+        // DefaultConf<T>::Action::SELECT,
 };
 template<typename T>
 const std::vector<typename DefaultConf<T>::Action> DefaultConf<T>::ACTIONS = {
@@ -321,8 +323,7 @@ const std::vector<typename DefaultConf<T>::Action> DefaultConf<T>::ACTIONS = {
 };
 
 /*** DEF OPT PARAMS HERE */
-template<typename T>
-const std::string DefaultConf<T>::KEY_DEBUG = "D";
+
 
 using CONF = DefaultConf<int>;
 

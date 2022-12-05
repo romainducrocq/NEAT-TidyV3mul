@@ -12,11 +12,7 @@
 #include "utils/logger.hpp"
 
 /*** ADD INCLUDE HERE */
-#include <array>
 
-#include "env/env/smb.hpp"
-
-#include "env/conf.hpp"
 
 namespace App { class Play; }
 
@@ -25,11 +21,6 @@ namespace MyEnv
     /*** DEC MODEL HERE */
     struct Model
     {
-        std::array<float, CONF::INPUTS>* obs_r = nullptr;
-
-        smb::Smb smb = smb::Smb();
-
-        size_t win_cnt = 0;
     };
 
     class Env : public Neat

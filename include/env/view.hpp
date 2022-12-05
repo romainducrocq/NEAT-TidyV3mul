@@ -13,13 +13,7 @@
 #include "utils/logger.hpp"
 
 /*** ADD INCLUDE HERE */
-#include <cstdlib>
-#include <iostream>
-#include <chrono>
 
-#include <utility>
-
-#include "env/env/smb.hpp"
 
 namespace View
 {
@@ -29,7 +23,6 @@ namespace View
             /*** DEC EVENT STATE HERE */
             struct EventState
             {
-                std::pair<std::string, bool> debug = {CONF::KEY_DEBUG, false};
             };
 
         private:
@@ -69,10 +62,6 @@ namespace View
         private:
             /*** DEC DRAW VARS HERE */
 
-            CONF::Mode mode = CONF::MODE;
-
-            float debug_sleep = 0.2f;
-            std::chrono::_V2::system_clock::time_point debug_timer;
 
         private:
             /*** DEC DRAW FUNCS HERE */
