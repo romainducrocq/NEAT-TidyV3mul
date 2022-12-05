@@ -261,7 +261,7 @@ MAX_NOOP             = 0
 `res/`
 - 1.2. add _rom_ file
 - 1.3. add _level state_ files
-- 1.4. add _optional_ ressources
+- 1.4. add _optional_ resources
 
 resources
 
