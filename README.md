@@ -162,7 +162,6 @@ optional args:
   Right   [play]        Button Right  (? set)
   Space   [play]        Button Start  (? set)
   Enter   [play]        Button Select (? set)
-  D       [train, eval] (Debug) Ai view
 ```
 
 ### Emulation
@@ -252,8 +251,14 @@ MAX_NOOP             = 0
 `src/env/env/`
 - 1.1. implement model
 
+`res/rom/`
+`res/sav/`
 `res/`
-- 1.2. add resources
+- 1.2. add _rom_ file
+- 1.3. add _level state_ files
+- 1.4. add _optional_ ressources
+
+resources
 
 ### 2. Control
 

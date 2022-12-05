@@ -4,11 +4,11 @@
 /*** DEF DEFAULT ARGS HERE */
 /*
  * TRAIN
-   -k n -l 1 -g 0 -t 0 -n 0 -p plt1 -s sav1
+   -k n -l _ -g 0 -t 0 -n 0 -p plt_ -s sav_
  * EVAL
-   -k n -l 1 -e 10 -t 0 -n 0 -s sav1
+   -k n -l _ -e 10 -t 0 -n 0 -s sav_
  * PLAY
-   -k y -l 1 -e 10
+   -k y -l _ -e 10
  * TEST
 
 */
@@ -140,7 +140,6 @@ struct DefaultConf{
                     std::cerr << "  Right   [play]        Button Right  (? set)                                                          \n";
                     std::cerr << "  Space   [play]        Button Start  (? set)                                                          \n";
                     std::cerr << "  Enter   [play]        Button Select (? set)                                                          \n";
-                    std::cerr << "  D       [train, eval] (Debug) Ai view                                                                \n";
 
                     return false;
 
@@ -304,7 +303,7 @@ const std::string DefaultConf<T>::KEY_SELECT = "Enter";
 template<typename T>
 bool DefaultConf<T>::KEYBOARD_SFML = false;
 template<typename T>
-std::string DefaultConf<T>::LVL = "1";
+std::string DefaultConf<T>::LVL = "";
 
 template<typename T>
 const std::array<typename DefaultConf<T>::Action, DefaultConf<T>::OUTPUTS> ACTIONS_ = {
