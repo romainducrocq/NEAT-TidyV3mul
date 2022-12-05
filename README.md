@@ -58,8 +58,8 @@ rm -v Nintaco_bin_2020-05-01.zip
 ```
 $ ./build.sh -R
 $ ./compile.sh
-$ ./run.sh -m train -k n -l 1_1 -g 0 -t 0 -n 1 -p plt1_1 -s sav1_1
-$ ./run.sh -m eval -k n -l 1_1 -e 10 -t 0 -n 0 -s sav1_1
+$ ./run.sh -m train -k n -l 1 -g 0 -t 0 -n 0 -p plt1 -s sav1
+$ ./run.sh -m eval -k n -l 1 -e 10 -t 0 -n 0 -s sav1
 ```
 </span>
   
@@ -69,8 +69,8 @@ $ ./run.sh -m eval -k n -l 1_1 -e 10 -t 0 -n 0 -s sav1_1
 `./train.sh [-D -R] <args>` or  
 <span id="how_to_train">
 ```
-* Debug   : $ ./train.sh -D -k n -l 1_1 -g 0 -t 0 -n 1 -p plt1_1 -s sav1_1
-* Release : $ ./train.sh -R -k n -l 1_1 -g 0 -t 0 -n 1 -p plt1_1 -s sav1_1
+* Debug   : $ ./train.sh -D -k n -l 1 -g 0 -t 0 -n 0 -p plt1 -s sav1
+* Release : $ ./train.sh -R -k n -l 1 -g 0 -t 0 -n 0 -p plt1 -s sav1
 ```
 </span>
   
@@ -80,8 +80,8 @@ $ ./run.sh -m eval -k n -l 1_1 -e 10 -t 0 -n 0 -s sav1_1
 `./eval.sh [-D -R] <args>` or  
 <span id="how_to_eval">
 ```
-* Debug   : $ ./eval.sh -D -k n -l 1_1 -e 10 -t 0 -n 0 -s sav1_1
-* Release : $ ./eval.sh -R -k n -l 1_1 -e 10 -t 0 -n 0 -s sav1_1
+* Debug   : $ ./eval.sh -D -k n -l 1 -e 10 -t 0 -n 0 -s sav1
+* Release : $ ./eval.sh -R -k n -l 1 -e 10 -t 0 -n 0 -s sav1
 ```
 </span>
   
@@ -91,8 +91,8 @@ $ ./run.sh -m eval -k n -l 1_1 -e 10 -t 0 -n 0 -s sav1_1
 `./play.sh [-D -R] <args>` or  
 <span id="how_to_play">
 ```
-* Debug   : $ ./play.sh -D -k y -l 1_1 -e 10
-* Release : $ ./play.sh -R -k y -l 1_1 -e 10
+* Debug   : $ ./play.sh -D -k y -l 1 -e 10
+* Release : $ ./play.sh -R -k y -l 1 -e 10
 ```
 </span>
   
@@ -214,7 +214,7 @@ SAV_FREQ             = 1
 GENERATIONS_TRAIN    = 0
 EPOCHS_EVAL          = 10
 MAX_STEP             = 0
-MAX_NOOP             = 1
+MAX_NOOP             = 0
 ```
 </span>
 

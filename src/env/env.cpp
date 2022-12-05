@@ -13,7 +13,7 @@ void MyEnv::Env::obs_func()
 /*** DEF ACT FUNC HERE */
 void MyEnv::Env::act_func()
 {
-    nintaco::Action::ACTION().act_func(this->Super::mdp.act);
+    /* nintaco::Action::ACTION().act_func(this->Super::mdp.act); */
 }
 
 /*** DEF DONE FUNC HERE */
@@ -39,7 +39,7 @@ void MyEnv::Env::noop_func()
 /*** DEF RESET FUNC HERE */
 void MyEnv::Env::reset_func()
 {
-    nintaco::State::STATE().load();
+    /* nintaco::State::STATE().load(); */
 }
 
 /*** DEF STEP FUNC HERE */

@@ -4,11 +4,11 @@
 /*** DEF DEFAULT ARGS HERE */
 /*
  * TRAIN
-   -k n -l 1_1 -g 0 -t 0 -n 1 -p plt1_1 -s sav1_1
+   -k n -l 1 -g 0 -t 0 -n 0 -p plt1 -s sav1
  * EVAL
-   -k n -l 1_1 -e 10 -t 0 -n 0 -s sav1_1
+   -k n -l 1 -e 10 -t 0 -n 0 -s sav1
  * PLAY
-   -k y -l 1_1 -e 10
+   -k y -l 1 -e 10
  * TEST
 
 */
@@ -272,7 +272,7 @@ size_t DefaultConf<T>::EPOCHS_EVAL = 10; // (0=inf) -> infinite eval
 template<typename T>
 size_t DefaultConf<T>::MAX_STEP = 0; // (0=inf) -> no step early stop
 template<typename T>
-size_t DefaultConf<T>::MAX_NOOP = 1; // (0=inf) -> no noop early stop
+size_t DefaultConf<T>::MAX_NOOP = 0; // (0=inf) -> no noop early stop
 
 /* NINTACO */
 template<typename T>
@@ -282,7 +282,7 @@ const std::string DefaultConf<T>::ADDR = "localhost";
 template<typename T>
 const std::string DefaultConf<T>::EXT = "nes";
 template<typename T>
-const std::string DefaultConf<T>::ROM = "SuperMarioBrosJUPRG0";
+const std::string DefaultConf<T>::ROM = "";
 
 template<typename T>
 const std::string DefaultConf<T>::KEY_A = "X";
@@ -304,7 +304,7 @@ const std::string DefaultConf<T>::KEY_SELECT = "Enter";
 template<typename T>
 bool DefaultConf<T>::KEYBOARD_SFML = false;
 template<typename T>
-std::string DefaultConf<T>::LVL = "1_1";
+std::string DefaultConf<T>::LVL = "1";
 
 template<typename T>
 const std::array<typename DefaultConf<T>::Action, DefaultConf<T>::OUTPUTS> ACTIONS_ = {
