@@ -224,11 +224,11 @@ const float DefaultConf<T>::MUTATE_WEIGHT_RATE = 0.1f;
 template<typename T>
 const float DefaultConf<T>::MUTATE_GENE_RATE = 0.25f;
 template<typename T>
-const float DefaultConf<T>::MUTATE_LINK_RATE = 2.f;
+const float DefaultConf<T>::MUTATE_LINK_RATE = 1.f;
 template<typename T>
 const float DefaultConf<T>::MUTATE_BIAS_RATE = 0.4f;
 template<typename T>
-const float DefaultConf<T>::MUTATE_NEURON_RATE = 0.5f;
+const float DefaultConf<T>::MUTATE_NEURON_RATE = 0.7f;
 template<typename T>
 const float DefaultConf<T>::MUTATE_ENABLE_RATE = 0.2f;
 template<typename T>
@@ -246,7 +246,7 @@ const float DefaultConf<T>::DELTA_THRESHOLD = 1.f;
 template<typename T>
 const float DefaultConf<T>::CROSSOVER_PROB = 0.75f;
 template<typename T>
-const size_t DefaultConf<T>::STALE_SPECIES = 15;
+const size_t DefaultConf<T>::STALE_SPECIES = 30;
 template<typename T>
 const size_t DefaultConf<T>::POPULATION_SIZE = 300;
 template<typename T>
@@ -258,7 +258,7 @@ const size_t DefaultConf<T>::POPULATION_INC_FREQ = 10; // (0=false) -> const pop
 template<typename T>
 const size_t DefaultConf<T>::ACT_REPEAT = 5;
 template<typename T>
-const size_t DefaultConf<T>::MVG_AVG = 10;
+const size_t DefaultConf<T>::MVG_AVG = 300;
 template<typename T>
 const size_t DefaultConf<T>::PLT_FREQ = 2; // (0=false) -> plot at end train only
 template<typename T>

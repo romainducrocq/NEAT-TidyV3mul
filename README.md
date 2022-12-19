@@ -5,7 +5,7 @@
 
 - My very own NEAT framework in C++ (it's v3 on the NES) : [\[v1. BASE\]](https://github.com/romainducrocq/NEAT-TidyVolve) - [\[v2. SFML\]](https://github.com/romainducrocq/NEAT-TidyV2fml) - [\[v3. EMUL\]](https://github.com/romainducrocq/NEAT-TidyV3mul)
 <!---->
-
+  
 - The NeuroEvolution of Augmenting Topologies (NEAT) User Page : http://www.cs.ucf.edu/~kstanley/neat.html
 - Nintaco API - NES / Famicom emulator and game RAM manipulation in C : https://nintaco.com/api.html
 
@@ -191,9 +191,9 @@ LIM_HIDDEN           = 1000000
 
 MUTATE_WEIGHT_RATE   = 0.1f
 MUTATE_GENE_RATE     = 0.25f
-MUTATE_LINK_RATE     = 2.f
+MUTATE_LINK_RATE     = 1.f
 MUTATE_BIAS_RATE     = 0.4f
-MUTATE_NEURON_RATE   = 0.5f
+MUTATE_NEURON_RATE   = 0.7f
 MUTATE_ENABLE_RATE   = 0.2f
 MUTATE_DISABLE_RATE  = 0.4f
 MUTATE_OFFSET_SIZE   = 0.1f
@@ -204,14 +204,14 @@ DELTA_WEIGHTS        = 0.4f
 DELTA_THRESHOLD      = 1.f
 
 CROSSOVER_PROB       = 0.75f
-STALE_SPECIES        = 15
+STALE_SPECIES        = 30
 POPULATION_SIZE      = 300
 END_POPULATION_SIZE  = 0
 POPULATION_GENS_INC  = 300
 POPULATION_INC_FREQ  = 10
 
 ACT_REPEAT           = 5
-MVG_AVG              = 10
+MVG_AVG              = 300
 PLT_FREQ             = 2
 SAV_FREQ             = 1
 
