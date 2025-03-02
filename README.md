@@ -20,7 +20,7 @@
 
 ## How to _
 
-`cd bin`
+`cd bin/`
 
 ```
 1. Execute program : $ <cmd>
@@ -34,7 +34,7 @@
 OPT=$(dirname $(pwd))'/opt/'
 
 sudo apt-get update
-sudo apt-get install g++ cmake valgrind libgtest-dev wmctrl
+sudo apt-get install g++ cmake libsfml-dev valgrind libgtest-dev wmctrl
 
 cd /usr/src/gtest
 sudo cmake CMakeLists.txt
@@ -49,16 +49,12 @@ rm -v jre-8uLatest-linux-x64.tar.gz
 mv -v jre1.8* jre1.8.0_latest
 
 cd "${OPT}"'nintaco'
-rm -rv *
-mkdir -p Nintaco_bin_2020-05-01
-cd Nintaco_bin_2020-05-01
-wget https://nintaco.com/Nintaco_bin_2020-05-01.zip
+if [ -d "Nintaco_bin_2020-05-01" ]; then rm -rv Nintaco_bin_2020-05-01; fi
 unzip Nintaco_bin_2020-05-01.zip
-rm -v Nintaco_bin_2020-05-01.zip
 ```
 
 ### Run
-`./app.sh` or  
+`sudo ./app.sh` or  
 <span id="how_to_run">
 ```
 $ ./build.sh -R
@@ -71,7 +67,7 @@ $ ./run.sh -m eval -k n -l 1 -e 10 -t 0 -n 0 -s sav1
 [Connect Nintaco](#how-to-_)
 
 ### Train
-`./train.sh [-D -R] <args>` or  
+`sudo ./train.sh [-D -R] <args>` or  
 <span id="how_to_train">
 ```
 * Debug   : $ ./train.sh -D -k n -l 1 -g 0 -t 0 -n 0 -p plt1 -s sav1
@@ -82,7 +78,7 @@ $ ./run.sh -m eval -k n -l 1 -e 10 -t 0 -n 0 -s sav1
 [Connect Nintaco](#how-to-_)
 
 ### Eval
-`./eval.sh [-D -R] <args>` or  
+`sudo ./eval.sh [-D -R] <args>` or  
 <span id="how_to_eval">
 ```
 * Debug   : $ ./eval.sh -D -k n -l 1 -e 10 -t 0 -n 0 -s sav1
@@ -93,7 +89,7 @@ $ ./run.sh -m eval -k n -l 1 -e 10 -t 0 -n 0 -s sav1
 [Connect Nintaco](#how-to-_)
 
 ### Play
-`./play.sh [-D -R] <args>` or  
+`sudo ./play.sh [-D -R] <args>` or  
 <span id="how_to_play">
 ```
 * Debug   : $ ./play.sh -D -k y -l 1 -e 10
@@ -104,7 +100,7 @@ $ ./run.sh -m eval -k n -l 1 -e 10 -t 0 -n 0 -s sav1
 [Connect Nintaco](#how-to-_)
 
 ### Test
-`./test.sh [-D -R] <args>` or  
+`sudo ./test.sh [-D -R] <args>` or  
 <span id="how_to_test">
 ```
 * Debug   : $ ./test.sh -D 
@@ -115,7 +111,7 @@ $ ./run.sh -m eval -k n -l 1 -e 10 -t 0 -n 0 -s sav1
 [Connect Nintaco](#how-to-_)
 
 ### Memcheck
-`./memcheck.sh <cmd>`  
+`sudo ./memcheck.sh <cmd>`  
 ```
 * Example : $ ./memcheck.sh ./train.sh -g 10 
 * Example : $ ./memcheck.sh ./eval.sh -s sav
@@ -124,7 +120,7 @@ $ ./run.sh -m eval -k n -l 1 -e 10 -t 0 -n 0 -s sav1
 [Connect Nintaco](#how-to-_)
 
 ### Log
-`./log.sh [-V] <cmd>`  
+`sudo ./log.sh [-V] <cmd>`  
 ```
 * Example : $ ./log.sh ./train.sh -s sav
 * Example : $ ./log.sh -V ./play.sh -e 1
@@ -170,7 +166,7 @@ optional args:
 ```
 
 ### Emulation
-`./emul.sh`
+`sudo ./emul.sh`
 ```
 * Start : $ ./emul.sh
 ```
@@ -226,7 +222,7 @@ MAX_NOOP             = 0
 
 ## Demo
 
-`cd bin && ./app.sh`
+`cd bin/ && sudo ./app.sh`
 
 ```
 -------------------------------TRAIN-------------------------------
