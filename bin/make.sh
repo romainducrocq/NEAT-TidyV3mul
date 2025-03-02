@@ -17,5 +17,6 @@ tar zxvf jre-8uLatest-linux-x64.tar.gz
 rm -v jre-8uLatest-linux-x64.tar.gz
 mv -v jre1.8* jre1.8.0_latest
 
+cd "${OPT}"'nintaco'
 if [ -d "Nintaco_bin_2020-05-01" ]; then rm -rv Nintaco_bin_2020-05-01; fi
 unzip Nintaco_bin_2020-05-01.zip
