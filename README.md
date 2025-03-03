@@ -1,6 +1,6 @@
 <span id="header">
   
-# [C++] Topologies I Dunno Yet, eVolve &>EMUL
+# NEAT - Topologies I Dunno Yet, eVolve >& EMUL
 ## > TidyV3mul : My very own NEAT framework in C++ (it's v3 on the NES)
 
 - My very own NEAT framework in C++ (it's v3 on the NES) : [\[v1. BASE\]](https://github.com/romainducrocq/NEAT-TidyVolve) - [\[v2. SFML\]](https://github.com/romainducrocq/NEAT-TidyV2fml) - [\[v3. EMUL\]](https://github.com/romainducrocq/NEAT-TidyV3mul)
@@ -13,7 +13,7 @@
 
 ## Examples
 
-- NEAT Super Mario Bros. : https://github.com/romainducrocq/NEAT-SuperMorIA
+- NEAT Super Mario Bros. : https://github.com/romainducrocq/NEAT-SuperMario
 </span>
   
 ****
